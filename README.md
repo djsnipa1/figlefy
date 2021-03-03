@@ -2,6 +2,12 @@
 
 API for getting ascii art strings
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3c33fc89-d03d-49a0-b805-d3c39f76ef48/deploy-status)](https://app.netlify.com/sites/figlify/deploys)
+
+---
+
+> I will add the updated instructions for building and deploying here
+
 ## Running the project
 
 To run the project install all dependencies using npm:
