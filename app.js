@@ -11,9 +11,12 @@ let history = require('./tracking.json');
 
 const port = process.env.PORT || 3000;
 
+const gitpodHost = "127.0.0.1";
+const herokuHost = "0.0.0.0";
+
 const server = new Hapi.Server();
 server.connection({
-    host: '127.0.0.1',
+    host: herokuHost,
     port: port,
     routes: { cors: true }
 });
