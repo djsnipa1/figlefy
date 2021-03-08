@@ -9,10 +9,12 @@ const Hapi = require('hapi'),
 
 let history = require('./tracking.json');
 
+const port = process.env.PORT || 3000;
+
 const server = new Hapi.Server();
 server.connection({
     host: '127.0.0.1',
-    port: process.env.PORT,
+    port: port,
     routes: { cors: true }
 });
 
