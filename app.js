@@ -12,7 +12,7 @@ let history = require('./tracking.json');
 const server = new Hapi.Server();
 server.connection({
     host: '127.0.0.1',
-    port: 7458,
+    port: process.env.PORT,
     routes: { cors: true }
 });
 
