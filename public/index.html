@@ -54,11 +54,11 @@
                 </article>
                 <article class="api_into">
                     <h3>API Overview</h3>
-                    <p>The API works very simple. The request url should be build of like this: <code>http://figlefy.com/figlefy/{URI encoded string}/{font}</code></p>
+                    <p>The API works very simple. The request url should be build of like this: <code>http://figlefy.herokuapp.com/figlefy/{URI encoded string}/{font}</code></p>
                     <p>The <code>{font}</code> is optional. If you de not specify any font you will get the default font. A small example using <code>fetch</code>:</p>
                     <pre>
                         <code class="javascript">
-const figlefyAPI = 'http://figlefy.com/figlefy/';
+const figlefyAPI = 'https://figlefy.herokuapp.com/figlefy/';
 let myString = 'Hello figlefy';
 
 fetch(figlefyAPI + encodeURIComponent(myString))
