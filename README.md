@@ -2,7 +2,7 @@
 
 API for getting ascii art strings
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3c33fc89-d03d-49a0-b805-d3c39f76ef48/deploy-status)](https://app.netlify.com/sites/figlify/deploys)
+[![Heroku Deployed](https://heroku-badge.herokuapp.com/?app=figlefy)](http://figlefy.herokuapp.com/figlefy)
 
 ---
 
@@ -22,12 +22,12 @@ Thats it. For development I use [Nodemon](https://github.com/remy/nodemon) which
 
 ### API Overview
 
-The API works very simple. The request url should be build of like this: `http://figlefy.com/figlefy/{URI encoded string}/{font}`
+The API works very simple. The request url should be build of like this: `http://figlefy.herokuapp.com/figlefy/{URI encoded string}/{font}`
 
 The `{font}` is optional. If you de not specify any font you will get the default font. A small example using `fetch`:
 
 ```javascript
-const figlefyAPI = 'http://figlefy.com/figlefy/';
+const figlefyAPI = 'http://figlefy.herokuapp.com/figlefy/';
 let myString = 'Hello figlefy';
 
 fetch(figlefyAPI + encodeURIComponent(myString))
@@ -52,7 +52,7 @@ This will return a `String` which looks like this when presented in a monospace 
 If you want to get an overview of all the posible fonts make a request to `/fonts`:
 
 ```javascript
-const fontListURL = 'http://figlefy.com/fonts/';
+const fontListURL = 'http://figlefy.herokuapp.com//fonts/';
 
 fetch(fontListURL)
     .then( res => res.json())
